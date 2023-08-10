@@ -1,5 +1,7 @@
 package csci318.assignment.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,6 +21,7 @@ public class ProductDetail {
     private String comment;
 
     @OneToOne(mappedBy = "productDetail")
+    @JsonIgnore
     private Product product;
 
     public Long getId() {

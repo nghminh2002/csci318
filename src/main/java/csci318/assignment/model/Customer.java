@@ -27,7 +27,6 @@ public class Customer {
 
     @OneToOne(cascade= CascadeType.PERSIST)
     @JoinColumn(name = "contactId")
-    @JsonIgnore
     private Contact contact;
 
     public Long getId() {

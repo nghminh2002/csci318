@@ -27,7 +27,6 @@ public class Product {
 
     @OneToOne(cascade= CascadeType.PERSIST)
     @JoinColumn(name = "productDetailId")
-    @JsonIgnore
     private ProductDetail productDetail;
 
     public Long getId() {
