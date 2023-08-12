@@ -1,4 +1,4 @@
-# REST Services with Spring V2
+# CSCI318 Group Assignment
 University of Wollongong
 Campus Liverpool - South Western Sydney
 CSCI318 - Software Engineering Practices & Principles
