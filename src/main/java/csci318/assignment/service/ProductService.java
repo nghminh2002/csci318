@@ -6,14 +6,14 @@ import csci318.assignment.model.ProductDetail;
 import java.util.List;
 
 public interface ProductService {
-    //product
+    //Operations for product
     Product createProduct(Product newProduct);
     Product updateProduct(Long productId, Product updatedProduct);
     Product updateProductProductDetail(Long productId, Long productDetailId);
     Product getProduct(Long productId);
     List<Product> getAllProducts();
 
-    //product details
+    //Operations for product detail
     ProductDetail createProductDetail(ProductDetail newProductDetail);
     ProductDetail updateProductDetail(Long productDetailId, ProductDetail updatedProductDetail);
     ProductDetail getProductDetail(Long productDetailId);

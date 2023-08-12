@@ -18,11 +18,13 @@ public class OrderController {
         this.orderService = orderService;
     }
 
+//    Use case: Create order
     @PostMapping()
     public Order createOrder(@RequestBody Order newOrder) {
         return orderService.createOrder(newOrder);
     }
 
+//    Use case: Update order
     @PutMapping("/{id}")
     public Order updateOrder(@PathVariable Long id, @RequestBody Order order) {
         return orderService.updateOrder(id, order);

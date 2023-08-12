@@ -23,46 +23,55 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
+//    Use case: Create customer
     @PostMapping()
     public Customer createCustomer(@RequestBody Customer newCustomer) {
         return customerService.createCustomer(newCustomer);
     }
 
-    @PutMapping("/{id}")
-    public Customer updateCustomer(@PathVariable Long id, @RequestBody Customer customer) {
-        return customerService.updateCustomerById(id, customer);
+//    Use case: Update customer name, address, country
+    @PutMapping("/{customerId}")
+    public Customer updateCustomer(@PathVariable Long customerId, @RequestBody Customer customer) {
+        return customerService.updateCustomerById(customerId, customer);
     }
 
+//    Use case: Map customer to contact
     @PutMapping("/{customerId}/contact/{contactId}")
     public Customer updateCustomerContact(@PathVariable Long customerId, @PathVariable Long contactId) {
         return customerService.updateCustomerContact(customerId, contactId);
     }
 
+//    Use case: Get customer by Id
     @GetMapping("/{id}")
     Customer getCustomer(@PathVariable Long id) {
         return customerService.getCustomerById(id);
     }
 
+//    Use case: Get all customers
     @GetMapping()
     List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
 
+//    Use case: Create contact
     @PostMapping("/contact")
     public Contact createContact(@RequestBody Contact newContact) {
         return customerService.createContact(newContact);
     }
 
+//    Use case: Update contact for customer by id
     @PutMapping("/contact/{id}")
     public Contact updateContact(@PathVariable Long id, @RequestBody Contact contact) {
         return customerService.updateContact(id, contact);
     }
 
+//    Use case: Get contact by Id
     @GetMapping("/contact/{id}")
     Contact getContact(@PathVariable Long id) {
         return customerService.getContactById(id);
     }
 
+//    Use case: Get all contacts
     @GetMapping("/contact")
     List<Contact> getAllContacts() {
         return customerService.getAllContacts();
