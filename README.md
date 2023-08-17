@@ -8,7 +8,7 @@ CSCI318 - Software Engineering Practices & Principles
    
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"companyName\":\"Company A\", \"address\": \"123 A Street\", \"country\": \"Australia\" }" http://localhoIn Wint:8080/customer
+curl -X POST -H "Content-Type:application/json" -d "{\"companyName\":\"Company A\", \"address\": \"123 A Street\", \"country\": \"Australia\" }" http://localhost:8080/customer
 ```
 
 In MacOS,
