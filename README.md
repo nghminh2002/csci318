@@ -344,7 +344,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"supplier\":\"Company A\", \"product\": \"Chicken\", \"quantity\": \4\}" http://localhost:8080/order
+curl -X POST -H "Content-Type:application/json" -d "{\"supplier\":\"Company A\", \"product\": \"Chicken\", \"quantity\": 5}" http://localhost:8080/order
 ```
 
 In MacOS,
@@ -366,7 +366,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X PUT -H "Content-Type:application/json" -d "{\"supplier\":\"Company 123\", \"product\": \"Carrot\", \"quantity\": \2\}" http://localhost:8080/order/5
+curl -X PUT -H "Content-Type:application/json" -d "{\"supplier\":\"Company 123\", \"product\": \"Carrot\", \"quantity\": 2}" http://localhost:8080/order/5
 ```
 
 In MacOS,
