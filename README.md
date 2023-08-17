@@ -30,7 +30,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"companyName\":\"Company 123\", \"address\": \"123 AB Street\", \"country\": \"New Zealand\" }" http://localhost:8080/customer/1
+curl -X PUT -H "Content-Type:application/json" -d "{\"companyName\":\"Company 123\", \"address\": \"123 AB Street\", \"country\": \"New Zealand\" }" http://localhost:8080/customer/1
 ```
 
 In MacOS,
@@ -75,7 +75,7 @@ which returns
 
 In Windows CMD
 ```shell
-curl -X POST http://localhost:8080/customer/1/contact/2
+curl -X PUT http://localhost:8080/customer/1/contact/2
 ```
 
 In MacOS, 
@@ -91,7 +91,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"name\":\"Minh Hue Nguyen\", \"phone\": \"0987654321\", \"email\": \"hmn998@uow.edu.au\", \"position\": \"Software Engineer\" }" http://localhost:8080/customer/contact/2
+curl -X PUT -H "Content-Type:application/json" -d "{\"name\":\"Minh Hue Nguyen\", \"phone\": \"0987654321\", \"email\": \"hmn998@uow.edu.au\", \"position\": \"Software Engineer\" }" http://localhost:8080/customer/contact/2
 ```
 
 In MacOS,
@@ -200,7 +200,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"productCategory\":\"Vegetable\", \"name\": \"Carrot\", \"price\": \5\}" http://localhost:8080/product/3
+curl -X PUT -H "Content-Type:application/json" -d "{\"productCategory\":\"Vegetable\", \"name\": \"Carrot\", \"price\": \5\}" http://localhost:8080/product/3
 ```
 
 In MacOS,
@@ -243,7 +243,7 @@ which returns
 
 In Windows CMD
 ```shell
-curl -X POST http://localhost:8080/product/3/detail/4
+curl -X PUT http://localhost:8080/product/3/detail/4
 ```
 
 In MacOS, 
@@ -259,7 +259,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"description\":\"Purple Vegetable\", \"comment\": \"Grown Overseas\"}" http://localhost:8080/product/detail/4
+curl -X PUT -H "Content-Type:application/json" -d "{\"description\":\"Purple Vegetable\", \"comment\": \"Grown Overseas\"}" http://localhost:8080/product/detail/4
 ```
 
 In MacOS, 
@@ -366,7 +366,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"supplier\":\"Company 123\", \"product\": \"Carrot\", \"quantity\": \2\}" http://localhost:8080/order/5
+curl -X PUT -H "Content-Type:application/json" -d "{\"supplier\":\"Company 123\", \"product\": \"Carrot\", \"quantity\": \2\}" http://localhost:8080/order/5
 ```
 
 In MacOS,
