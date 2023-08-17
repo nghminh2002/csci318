@@ -84,7 +84,7 @@ curl --location --request PUT 'http://localhost:8080/customer/1/contact/2'
 ```
 which returns
 ```json
-{"id":1,"companyName":"Company 123","address":"123 AB Street", "country":"NZ","contact":{"id":2,"name":"Hue Minh Nguyen","phone" :"0123456789","email":"hmn998@gmail.com","position":"Software Developer"}}
+{"id":1,"companyName":"Company 123","address":"123 AB Street", "country":"New Zealand","contact":{"id":2,"name":"Hue Minh Nguyen","phone" :"0123456789","email":"hmn998@gmail.com","position":"Software Developer"}}
 ```
 
 5. Update Contact for Customer by ID
@@ -123,7 +123,7 @@ curl --location 'http://localhost:8080/customer/1'
 ```
 which returns
 ```json
-{"id":1,"companyName":"Company 123","address":"123 AB Street","country":"NZ","contact":{"id":2,"name":"Minh Hue Nguyen","phone":"0987654321","email":"hmn998@uow.edu.au","position":"Software Engineer"}}
+{"id":1,"companyName":"Company 123","address":"123 AB Street","country":"New Zealand","contact":{"id":2,"name":"Minh Hue Nguyen","phone":"0987654321","email":"hmn998@uow.edu.au","position":"Software Engineer"}}
 ```
 
 7. Get All Customers
@@ -139,7 +139,7 @@ curl --location 'http://localhost:8080/customer'
 ```
 which returns
 ```json
-[{"id":1,"companyName":"Company 123","address":"123 AB Street","country":"NZ","contact":{"id":2,"name":"Minh Hue Nguyen","phone":"0987654321","email":"hmn998@uow.edu.au","position":"Software Engineer"}}]
+[{"id":1,"companyName":"Company 123","address":"123 AB Street","country":"New Zealand","contact":{"id":2,"name":"Minh Hue Nguyen","phone":"0987654321","email":"hmn998@uow.edu.au","position":"Software Engineer"}}]
 ```
 
 8. Get Contact by ID
