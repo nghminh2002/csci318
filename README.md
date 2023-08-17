@@ -178,7 +178,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X POST -H "Content-Type:application/json" -d "{\"productCategory\":\"Meat\", \"name\": \"Chicken\", \"price\": \15.20\}" http://localhost:8080/product
+curl -X POST -H "Content-Type:application/json" -d "{\"productCategory\":\"Meat\", \"name\": \"Chicken\", \"price\": 15.20}" http://localhost:8080/product
 ```
 
 In MacOS,
@@ -200,7 +200,7 @@ which returns
 
 In Windows CMD,
 ```shell
-curl -X PUT -H "Content-Type:application/json" -d "{\"productCategory\":\"Vegetable\", \"name\": \"Carrot\", \"price\": \5\}" http://localhost:8080/product/3
+curl -X PUT -H "Content-Type:application/json" -d "{\"productCategory\":\"Vegetable\", \"name\": \"Carrot\", \"price\": 5}" http://localhost:8080/product/3
 ```
 
 In MacOS,
