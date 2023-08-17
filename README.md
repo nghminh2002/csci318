@@ -289,37 +289,65 @@ curl --location 'http://localhost:8080/product/3'
 ```
 which returns
 ```json
-{"id":3,"productCategory":"Vegetable","name":"Carrot","price":5.0,"productDetail":{"id":4,"description":"Description CDE","comment": "GOOD"}}
+{"id":3,"productCategory":"Vegetable","name":"Carrot","price":5.0,"productDetail":{"id":4,"description":"Purple Vegetable","comment": "Grown Overseas"}}
 ```
 
-16. Get all products
+16. Get All Products
+
+In Windows CMD,
+```shell
+curl -X GET http://localhost:8080/product
+```
+
+In MacOS,
 ```shell
 curl --location 'http://localhost:8080/product'
 ```
 which returns
 ```json
-[{"id":3,"productCategory":"Vegetable","name":"Carrot","price":5.0,"productDetail":{"id":4,"description":"Description CDE","comment":"GOOD"}}]
+[{"id":3,"productCategory":"Vegetable","name":"Carrot","price":5.0,"productDetail":{"id":4,"description":"Purple Vegetable","comment":"Grown Overseas"}}]
 ```
 
-17. Get product detail by Id
+17. Get Product Detail by ID
+ 
+In Windows CMD,
+```shell
+curl -X GET http://localhost:8080/product/detail/4
+```
+
+In MacOS,
 ```shell
 curl --location 'http://localhost:8080/product/detail/4'
 ```
 which returns
 ```json
-{"id":4,"description":"Description CDE","comment":"GOOD"}
+{"id":4,"description":"Purple Vegetable","comment":"Grown Overseas"}
 ```
 
-18. Get all product details
+18. Get All Product Details
+     
+In Windows CMD,
+```shell
+curl -X GET http://localhost:8080/product/detail/
+```
+
+In MacOS,
 ```shell
 curl --location 'http://localhost:8080/product/detail'
 ```
 which returns
 ```json
-[{"id":4,"description":"Description CDE","comment":"GOOD"}]
+{"id":4,"description":"Purple Vegetable","comment":"Grown Overseas"}
 ```
 
-19. Create order
+19. Create Order
+
+In Windows CMD,
+```shell
+curl -X POST -H "Content-Type:application/json" -d "{\"supplier\":\"Company A\", \"product\": \"Chicken\", \"quantity\": \4\}" http://localhost:8080/order
+```
+
+In MacOS,
 ```shell
 curl --location 'http://localhost:8080/order' \
 --header 'Content-Type: application/json' \
@@ -334,17 +362,24 @@ which returns
 {"id":5,"supplier":"Company A","product":"Chicken","quantity":5}
 ```
 
-20. Update order
+20. Update Order
+
+In Windows CMD,
+```shell
+curl -X POST -H "Content-Type:application/json" -d "{\"supplier\":\"Company 123\", \"product\": \"Carrot\", \"quantity\": \2\}" http://localhost:8080/order/5
+```
+
+In MacOS,
 ```shell
 curl --location --request PUT 'http://localhost:8080/order/5' \
 --header 'Content-Type: application/json' \
 --data '{
     "supplier": "Company 123",
-    "product": "Tech",
+    "product": "Carrot",
     "quantity": 2
 }'
 ```
 which returns
 ```json
-{"id":5,"supplier":"Company 123","product":"Tech","quantity":2}
+{"id":5,"supplier":"Company 123","product":"Carrot","quantity":2}
 ```
